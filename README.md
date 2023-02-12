@@ -1,6 +1,6 @@
 # Exercism-track-exercises
 
-This is a repostory full of the exercism exercises I've completed thus far in:
+This is a repostory full of the [exercism exercises](https://exercism.org/profiles/Em1e/solutions) I've completed thus far in:
 
 - JavaScript
 - Python
