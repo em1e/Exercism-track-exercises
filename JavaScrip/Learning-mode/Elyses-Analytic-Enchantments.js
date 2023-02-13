@@ -1,3 +1,10 @@
+// Returns whether a number is even.
+const isEven = n => n % 2 === 0;
+
+// Returns whether a number is odd.
+const isOdd = n => n % 2 === 1;
+
+
 // Get the position (index) of the card in the given stack
 export function getCardPosition(stack, card) {
   return stack.indexOf(card);
@@ -10,32 +17,20 @@ export function doesStackIncludeCard(stack, card) {
 
 // Determine if each card is even
 export function isEachCardEven(stack) {
-  for(let i=0; i < stack.length; i++){
-    if(stack[i] % 2 !== 0) return false;
-  }
-  return true;
+  return stack.every(isEven);
 }
 
 // Check if stack contains odd-value card
 export function doesStackIncludeOddCard(stack) {
-  for(let i=0; i < stack.length; i++){
-    if(stack[i] % 2 !== 0) return true;
-  }
-  return false;
+  return stack.some(isOdd);
 }
 
 // Get the first odd card from the stack
 export function getFirstOddCard(stack) {
-  for(let i=0; i < stack.length; i++){
-    if(stack[i] % 2 !== 0) return stack[i];
-  }
-  return undefined;
+  return stack.find(isOdd);
 }
 
 // Determine the position of the first card that is even
 export function getFirstEvenCardPosition(stack) {
-  for(let i=0; i < stack.length; i++){
-    if(stack[i] % 2 === 0) return i;
-  }
-  return -1;
+  return stack.findIndex(isEven);
 }
