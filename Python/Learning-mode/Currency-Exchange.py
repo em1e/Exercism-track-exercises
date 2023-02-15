@@ -1,7 +1,7 @@
   # Function should return the value of the exchanged currency.
 def exchange_money(budget, exchange_rate):
     return budget / exchange_rate
-
+ 
   # Function should return the amount of money that is left from the budget.
 def get_change(budget, exchanging_value):
     return budget - exchanging_value
