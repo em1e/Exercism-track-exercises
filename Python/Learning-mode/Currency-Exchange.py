@@ -5,7 +5,7 @@ def exchange_money(budget, exchange_rate):
   # Function should return the amount of money that is left from the budget.
 def get_change(budget, exchanging_value):
     return budget - exchanging_value
-
+ 
   # Function should return the total value of bills you now have.
 def get_value_of_bills(denomination, number_of_bills):
     return denomination * number_of_bills
