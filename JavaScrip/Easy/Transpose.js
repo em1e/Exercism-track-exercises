@@ -1,5 +1,3 @@
-// Given an input text output it transposed.
-// https://en.wikipedia.org/wiki/Transpose
 
 export function transpose(input) {
 
